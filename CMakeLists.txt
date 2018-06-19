@@ -11,6 +11,11 @@ cmake_minimum_required(VERSION 2.8)
 
 project(OpenCVSamples)
 
+if (UNIX)
+    set(CMAKE_CXX_STANDARD 11)
+    set(CMAKE_CXX_STANDARD_REQUIRED ON)
+endif()
+
 # Basic Cpp samples
 add_subdirectory(BasicCpp)
 
